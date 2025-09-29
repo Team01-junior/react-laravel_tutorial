@@ -5,12 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {RouterProvider} from "react-router-dom";
 import router from "./router.js";
+import {ContextProvider} from "./contexts/ContextProvider";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <React.StrictMode>
+            <ContextProvider>
             <RouterProvider router={router}/>
+            </ContextProvider>
         </React.StrictMode>
     </React.StrictMode>
 );
