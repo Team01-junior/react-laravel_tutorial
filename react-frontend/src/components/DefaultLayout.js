@@ -1,6 +1,6 @@
 import {Outlet} from "react-router-dom";
 
-export default function Defaultlayout(){
+export default function DefaultLayout(){
     return (
         <div>
             Default

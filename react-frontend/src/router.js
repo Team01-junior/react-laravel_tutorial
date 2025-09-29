@@ -3,14 +3,14 @@ import Login from "./views/Login.js";
 import Signup from "./views/Signup.js";
 import Users from "./views/Users.js";
 import NotFound from "./views/NotFound.js";
-import Defaultlayout from "./components/DefaultLayout";
 import Dashboard from "./views/Dashboard";
-import Guestlayout from "./components/GuestLayout";
+import GuestLayout from "./components/GuestLayout";
+import DefaultLayout from "./components/DefaultLayout";
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Defaultlayout />,
+        element: <DefaultLayout />,
         children:[
 
             {
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/',
-        element: <Guestlayout />,
+        element: <GuestLayout />,
         children:[
             {
                 path: '/login',
