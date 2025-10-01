@@ -2,12 +2,12 @@ import {Link, Navigate, Outlet} from "react-router-dom";
 import {useStateContext} from "../contexts/ContextProvider";
 
 export default function DefaultLayout(){
-    const { user, token } = useStateContext();
+    const { user, token, setUser, setToken } = useStateContext();
 
-// Wait for token to load
-    if (token === null) return null;
+    if (!token) {
+        return <Navigate to="/login" />;
+    }
 
-    if (!token) return <Navigate to="/login" replace />;
 
     return (
         <div id="defaultLayout">

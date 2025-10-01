@@ -150,6 +150,7 @@
       <path value="$PROJECT_DIR$/laravel-backend/vendor/symfony/polyfill-php85" />
       <path value="$PROJECT_DIR$/laravel-backend/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/laravel-backend/vendor/brianium/paratest" />
+      <path value="$PROJECT_DIR$/laravel-backend/vendor/laravel/sanctum" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
