@@ -11,6 +11,7 @@ Route::middleware('auth:sanctum')->group(function () {
     });
 
     Route::post('/logout', [AuthController::class, 'logout']);
+    Route::apiResource('/users', \App\Http\Controllers\Api\UserController::class);
 });
 // Auth routes
 Route::post('/signup', [AuthController::class, 'signup']);
