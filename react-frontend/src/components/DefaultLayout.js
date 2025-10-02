@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import axiosClient from "../axios-client";
 
 export default function DefaultLayout() {
-    const { user, token, setUser, setToken } = useStateContext();
+    const { user, token ,notification, setUser, setToken } = useStateContext();
 
     // fetch user data when token exists
     useEffect(() => {
@@ -49,7 +49,10 @@ export default function DefaultLayout() {
             </aside>
             <div className="content">
                 <header>
-                    <div>Header</div>
+                    {notification &&
+                        <div className="notification">
+                        {notification}
+                    </div>}
                     <div>
                         {user?.name}
                         <a href="#" onClick={onLogout} className="btn-logout">Logout</a>

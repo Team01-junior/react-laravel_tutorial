@@ -28,7 +28,8 @@ export default function Users() {
         axiosClient.get('/users')
             .then(({data})=>{
                 setLoading(false);
-                setUsers(data.data);   // ✅ FIX: use data.data (array of users)
+                // ✅ Ensure always array
+                setUsers(Array.isArray(data.data) ? data.data : data);
                 console.log(data);
             })
             .catch(() =>{
@@ -56,29 +57,29 @@ export default function Users() {
                     </thead>
                     {loading &&
                         <tbody>
-                    <tr>
-                        <td colSpan="5" className="text-center">
-                            Loading...
-                        </td>
-                    </tr>
-                    </tbody>
+                        <tr>
+                            <td colSpan="5" className="text-center">
+                                Loading...
+                            </td>
+                        </tr>
+                        </tbody>
                     }
                     {!loading &&
                         <tbody>
-                    {users.map(u => (
-                        <tr key={u.id}>
-                            <td>{u.id}</td>
-                            <td>{u.name}</td>
-                            <td>{u.email}</td>
-                            <td>{u.created_at}</td>
-                            <td>
-                                <Link className="btn-edit" to={'/app/users/'+u.id}>Edit</Link>
-                                &nbsp;
-                                <button onClick={ev => onDelete(u)} className="btn-delete">Delete</button>
-                            </td>
-                        </tr>
-                    ))}
-                    </tbody>
+                        {users.map(u => (
+                            <tr key={u.id}>
+                                <td>{u.id}</td>
+                                <td>{u.name}</td>
+                                <td>{u.email}</td>
+                                <td>{u.created_at}</td>
+                                <td>
+                                    <Link className="btn-edit" to={'/app/users/'+u.id}>Edit</Link>
+                                    &nbsp;
+                                    <button onClick={ev => onDelete(u)} className="btn-delete">Delete</button>
+                                </td>
+                            </tr>
+                        ))}
+                        </tbody>
                     }
                 </table>
             </div>
