@@ -2,10 +2,6 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/laravel-backend/app" isTestSource="false" packagePrefix="App\" />
-      <sourceFolder url="file://$MODULE_DIR$/laravel-backend/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
-      <sourceFolder url="file://$MODULE_DIR$/laravel-backend/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
-      <sourceFolder url="file://$MODULE_DIR$/laravel-backend/tests" isTestSource="true" packagePrefix="Tests\" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-backend/vendor/brianium/paratest" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-backend/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-backend/vendor/carbonphp/carbon-doctrine-types" />
@@ -135,6 +131,7 @@
       <excludeFolder url="file://$MODULE_DIR$/laravel-backend/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-backend/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-backend/vendor/laravel/sanctum" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

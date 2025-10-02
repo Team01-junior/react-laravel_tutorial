@@ -22,6 +22,7 @@
   </component>
   <component name="PhpIncludePathManager">
     <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/laravel-backend/vendor/composer" />
       <path value="$PROJECT_DIR$/laravel-backend/vendor/psr/http-factory" />
       <path value="$PROJECT_DIR$/laravel-backend/vendor/psr/clock" />
@@ -71,6 +72,7 @@
       <path value="$PROJECT_DIR$/laravel-backend/vendor/pestphp/pest-plugin-mutate" />
       <path value="$PROJECT_DIR$/laravel-backend/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/laravel-backend/vendor/pestphp/pest-plugin-laravel" />
+      <path value="$PROJECT_DIR$/laravel-backend/vendor/laravel/sanctum" />
       <path value="$PROJECT_DIR$/laravel-backend/vendor/phpstan/phpdoc-parser" />
       <path value="$PROJECT_DIR$/laravel-backend/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/laravel-backend/vendor/phpunit/php-text-template" />
@@ -150,7 +152,6 @@
       <path value="$PROJECT_DIR$/laravel-backend/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/laravel-backend/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/laravel-backend/vendor/graham-campbell/result-type" />
-      <path value="$PROJECT_DIR$/laravel-backend/vendor/laravel/sanctum" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
